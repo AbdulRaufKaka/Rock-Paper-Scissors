@@ -79,3 +79,18 @@ img{
     
     
 }
+
+
+@media (max-width:590px) {
+     body h1{
+        width: 100%;
+        font-size: 2rem;
+    }
+    .choices{
+        flex-direction: column;
+    }
+     #msg{
+        width: 100%;
+        font-size:  1.8rem; ;
+    }
+}
