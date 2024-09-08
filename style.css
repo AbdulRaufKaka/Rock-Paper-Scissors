@@ -2,15 +2,14 @@
     margin: 0;
     text-align: center;
     padding: 0;
-
+    box-sizing: border-box;
 }
 
 h1
 {
     background-color: #081b31;
-    color: #fff;
-    height: 5rem; /*5 rem Unit ? */
-    line-height: 5rem; /*Line hieght ? */
+    color: #fff; 
+    line-height: 5rem; 
     
 }
 
@@ -69,8 +68,6 @@ img{
 #msg{
     background-color: #081b31;
     color: white ;
-    /* height: 4rem; */
-    /* line-height: 5rem; */
     font-size: 2rem;
     padding: 1rem;
     display: inline;
@@ -84,7 +81,8 @@ img{
 @media (max-width:590px) {
      body h1{
         width: 100%;
-        font-size: 2rem;
+
+        line-height: 4.5rem;
     }
     .choices{
         flex-direction: column;
