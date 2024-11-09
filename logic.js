@@ -30,7 +30,7 @@ const Show_Winner = (User_Win,User_Choice,Computer_Choice) =>
     {
         User_Score++;
         User_Score_para.innerText = User_Score;
-        msg.innerText = `You win! Your ${User_Choice} beats ${Computer_Choice}`;
+        msg.innerText = `You win! Your ${User_Choice} beats Computer ${Computer_Choice}`;
         msg.style.background = "green";
 
     }
@@ -40,7 +40,7 @@ const Show_Winner = (User_Win,User_Choice,Computer_Choice) =>
         Comp_Score_para.innerText = Comp_Score;
         msg.innerText = " You Lose !"
         msg.style.background = "red";
-        msg.innerText = `You Lose! Computer ${Computer_Choice} beats ${User_Choice}`;
+        msg.innerText = `You Lose! Computer ${Computer_Choice} beats Your ${User_Choice}`;
 
     }
 
