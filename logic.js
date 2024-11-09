@@ -18,7 +18,7 @@ const gen_Comp_Choice = () =>
 const Draw_Game = () =>
 {
     console.log("Game Was Draw");
-    msg.innerText = " Gamw Was Draw Play Again !";
+    msg.innerText = " Game Was Draw Play Again !";
     msg.style.background = "#081b31";
 
 }
@@ -31,6 +31,7 @@ const Show_Winner = (User_Win,User_Choice,Computer_Choice) =>
         User_Score++;
         User_Score_para.innerText = User_Score;
         msg.innerText = `You win! Your ${User_Choice} beats ${Computer_Choice}`;
+        msg.style.background = "green";
 
     }
     else
@@ -39,7 +40,7 @@ const Show_Winner = (User_Win,User_Choice,Computer_Choice) =>
         Comp_Score_para.innerText = Comp_Score;
         msg.innerText = " You Lose !"
         msg.style.background = "red";
-        msg.innerText = `You Lose! Your ${Computer_Choice} beats ${User_Choice}`;
+        msg.innerText = `You Lose! Computer ${Computer_Choice} beats ${User_Choice}`;
 
     }
 
